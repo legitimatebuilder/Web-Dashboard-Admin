@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Dashboard</title>
+    <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./JS/line_chart.js" defer></script>
+    <script src="./JS/doughnut_chart.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1 class="brand">Brand</h1>
+        <input type="text" class="search-bar" placeholder="search here">
+        <div class="input-image"></div>
+        <div class="logo"></div>
+        <ul class="icon-list">
+            <li><i class="fa-solid fa-bell"></i></li>
+        </ul>
+    </nav>
+    <section class="contents">
+        <aside class="side-bar">
+            <ul class="task-list">
+                <li><i class="fa-brands fa-microsoft"></i>Dashboard</li>
+                <li><i class="fa-solid fa-user-graduate"></i>Students</li>
+                <li><i class="fa-solid fa-chalkboard-user"></i>Teachers</li>
+                <li><i class="fa-solid fa-users"></i>Employees</li>
+                <li><i class="fa-solid fa-chart-column"></i>Analytics</li>
+                <li><i class="fa-solid fa-hand-holding-dollar"></i>Earnings</li>
+                <li><i class="fa-solid fa-gear"></i>Settings</li>
+                <li><i class="fa-solid fa-question"></i>Help</li>
+            </ul>
+        </aside>
+        <div class="grid-container">
+            <div class="kpi">
+                <div class="kpi-image-one"><i class="fa-solid fa-user-graduate"></i></div>
+                <p class="kpi-text-one">1217</p>
+                <p class="kpi-text-two">Students</p>
+            </div>
+            <div class="kpi">
+                <div class="kpi-image-two"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <p class="kpi-text-three">42</p>
+                <p class="kpi-text-four">Teachers</p>
+            </div>
+            <div class="kpi">
+                <div class="kpi-image-three"><i class="fa-solid fa-users"></i></div>
+                <p class="kpi-text-five">68</p>
+                <p class="kpi-text-six">Employees</p>
+            </div>
+            <div class="kpi">
+                <div class="kpi-image-four"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <p class="kpi-text-seven">&dollar;4500</p>
+                <p class="kpi-text-eight">Earnings</p>
+            </div>
+        </div>
+        <div class="line-chart-container">
+            <h3>Earning (Past 12 Months)</h3>
+            <div>
+                <canvas id="line-chart"></canvas>
+            </div>
+        </div>
+        <div class="doughnut-chart-container">
+            <h3>Employees</h3>
+            <div>
+                <canvas id="doughnut-chart"></canvas>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
